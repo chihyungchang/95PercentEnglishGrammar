@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Base styles */
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* React-pageflip overrides */
+.stf__parent {
+  margin: 0 auto;
+}
+
+.stf__item {
+  background-color: #fdfcf8 !important;
+}
+
+.stf__item--hard {
+  background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%) !important;
+}
+
+.stf__item:has(.hard) {
+  background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%) !important;
+}
