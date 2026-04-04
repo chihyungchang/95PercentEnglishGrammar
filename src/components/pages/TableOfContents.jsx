@@ -17,6 +17,9 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
     { page: 14, num: '七', title: '三个特殊句式', desc: '强调句' },
     { page: 15, num: '', title: '├ 倒装句', desc: '句序倒置、强调语气' },
     { page: 16, num: '', title: '└ 虚拟语气', desc: '假设不可能发生的事' },
+    { page: 17, num: '八', title: '时态', desc: '一般、进行时态' },
+    { page: 18, num: '', title: '├ 完成时态', desc: '过去/现在/将来完成' },
+    { page: 19, num: '', title: '└ 完成进行时态', desc: '持续性动作' },
   ]
 
   return (
