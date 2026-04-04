@@ -34,7 +34,7 @@ const Page12 = forwardRef((_, ref) => {
               <p>I found differences <span className="bg-[#34495e]/20 text-[#34495e] px-1 rounded">by</span> contrasting the two.</p>
             </div>
             <div className="mt-2 pt-2 border-t border-dashed border-gray-200">
-              <p className="text-xs text-gray-400 mb-1">从句形式：</p>
+              <p className="text-sm text-gray-400 mb-1">从句形式：</p>
               <div className="space-y-1 font-mono text-sm">
                 <p>She looks at me <span className="bg-[#34495e] text-white px-1.5 py-0.5 rounded text-xs">as if</span> she knows me.</p>
                 <p>He finished the work <span className="bg-[#34495e] text-white px-1.5 py-0.5 rounded text-xs">as</span> I told him to.</p>

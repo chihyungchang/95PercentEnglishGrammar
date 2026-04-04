@@ -47,7 +47,7 @@ const Page15 = forwardRef((_, ref) => {
 
               {/* 现在不可能 */}
               <div className="bg-white rounded p-2 mb-2">
-                <p className="text-xs text-gray-500 mb-1">现在不可能：</p>
+                <p className="text-sm text-gray-500 mb-1">现在不可能：</p>
                 <p className="font-mono text-sm">
                   If I <span className="bg-[#c0392b] text-white px-1 rounded text-xs">were</span> a boy, I <span className="bg-[#c0392b] text-white px-1 rounded text-xs">would</span> be a soldier.
                 </p>
@@ -56,15 +56,15 @@ const Page15 = forwardRef((_, ref) => {
 
               {/* 过去不可能 */}
               <div className="bg-white rounded p-2">
-                <p className="text-xs text-gray-500 mb-1">过去不可能（和既成事实相反）：</p>
+                <p className="text-sm text-gray-500 mb-1">过去不可能（和既成事实相反）：</p>
                 <p className="font-mono text-sm mb-1">
                   If I <span className="bg-[#8e44ad] text-white px-1 rounded text-xs">had studied</span> English, it <span className="bg-[#8e44ad] text-white px-1 rounded text-xs">would have been</span> easier now.
                 </p>
-                <p className="text-xs text-gray-400 mb-2">说明过去很蠢，现在并不 easy</p>
+                <p className="text-sm text-gray-400 mb-2">说明过去很蠢，现在并不 easy</p>
                 <p className="font-mono text-sm">
                   If I <span className="bg-[#8e44ad] text-white px-1 rounded text-xs">hadn't had</span> that extra cake, I <span className="bg-[#8e44ad] text-white px-1 rounded text-xs">wouldn't have been</span> feeling guilty.
                 </p>
-                <p className="text-xs text-gray-400">说明吃了，现在很有负罪感</p>
+                <p className="text-sm text-gray-400">说明吃了，现在很有负罪感</p>
                 <div className="flex justify-center gap-4 mt-2 text-xs text-[#8e44ad]">
                   <span>过去完成</span>
                   <span>→</span>

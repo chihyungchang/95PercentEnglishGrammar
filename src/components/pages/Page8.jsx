@@ -68,7 +68,7 @@ const Page8 = forwardRef((_, ref) => {
               A <span className="text-[#2d5aa0]">beautiful</span> <span className="text-[#c0392b] font-bold">girl</span> <span className="text-[#8e44ad]">from Mars</span> <span className="text-[#8e44ad]">who likes spring</span> <span className="text-[#1e8449] font-bold">shared</span> a <span className="text-[#2d5aa0]">fascinating</span> <span className="text-[#2d5aa0] font-bold">story</span> <span className="text-[#8e44ad]">about her people</span> <span className="text-[#8e44ad]">which moved us</span>.
             </p>
 
-            <div className="grid grid-cols-2 gap-2 mt-3 text-xs">
+            <div className="grid grid-cols-2 gap-2 mt-3 text-sm">
               <div className="space-y-1">
                 <p><span className="bg-[#e8f0fe] px-1 rounded">beautiful</span> = 定①(形)</p>
                 <p><span className="bg-[#fdeaea] px-1 rounded font-bold">girl</span> = 主(名)</p>

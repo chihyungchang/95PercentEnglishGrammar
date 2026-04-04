@@ -41,10 +41,10 @@ const Page16 = forwardRef((_, ref) => {
             future={{ verb: 'will be doing', cn: '将会正在做' }}
           />
           <div className="bg-[#e8f0fe] border border-[#2d5aa0]/30 rounded-lg p-2 mt-2">
-            <p className="font-mono text-sm">
+            <p className="font-mono text-base">
               I <span className="bg-[#2d5aa0] text-white px-1 rounded text-xs">will be sleeping</span> by the time you come back.
             </p>
-            <p className="text-xs text-gray-500 mt-1">你回来的时候我会在睡觉。</p>
+            <p className="text-sm text-gray-500 mt-1">你回来的时候我会在睡觉。</p>
           </div>
         </Section>
 

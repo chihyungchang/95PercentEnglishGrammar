@@ -125,19 +125,19 @@ function TenseCard({ color, title, en, verb, example, translation }) {
         >
           {title}
         </span>
-        <span className="text-xs text-gray-400">{en}</span>
-        <span className="ml-auto font-mono text-sm" style={{ color }}>{verb}</span>
+        <span className="text-sm text-gray-400">{en}</span>
+        <span className="ml-auto font-mono text-base" style={{ color }}>{verb}</span>
       </div>
-      <p className="font-mono text-sm">
+      <p className="font-mono text-base">
         {parts.map((part, i) =>
           part.toLowerCase().includes('finished') ? (
-            <span key={i} className="px-1 rounded text-white text-xs" style={{ backgroundColor: color }}>{part}</span>
+            <span key={i} className="px-1 rounded text-white text-sm" style={{ backgroundColor: color }}>{part}</span>
           ) : (
             <span key={i}>{part}</span>
           )
         )}
       </p>
-      <p className="text-xs text-gray-500 mt-1">{translation}</p>
+      <p className="text-sm text-gray-500 mt-1">{translation}</p>
     </div>
   )
 }

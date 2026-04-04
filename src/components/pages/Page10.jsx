@@ -39,19 +39,19 @@ const Page10 = forwardRef((_, ref) => {
         <Section num={1} title="副词例子" en="Adverb Examples">
           <div className="grid grid-cols-2 gap-1.5 text-sm">
             <div className="bg-white border border-gray-200 rounded p-2">
-              <p className="text-xs text-gray-400 mb-1">i. 修饰动词（后）</p>
+              <p className="text-sm text-gray-400 mb-1">i. 修饰动词（后）</p>
               <p className="font-mono">Yusuf smiles <span className="text-[#8e44ad] underline">happily</span>.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded p-2">
-              <p className="text-xs text-gray-400 mb-1">ii. 修饰动词（前）</p>
+              <p className="text-sm text-gray-400 mb-1">ii. 修饰动词（前）</p>
               <p className="font-mono">Yusuf <span className="text-[#8e44ad] underline">quickly</span> understood.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded p-2">
-              <p className="text-xs text-gray-400 mb-1">iii. 修饰形容词（很）</p>
+              <p className="text-sm text-gray-400 mb-1">iii. 修饰形容词（很）</p>
               <p className="font-mono">She is <span className="text-[#8e44ad] underline">strikingly</span> beautiful.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded p-2">
-              <p className="text-xs text-gray-400 mb-1">iv. 修饰形容词（蛮）</p>
+              <p className="text-sm text-gray-400 mb-1">iv. 修饰形容词（蛮）</p>
               <p className="font-mono">He is <span className="text-[#8e44ad] underline">pretty</span> tall.</p>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Page10 = forwardRef((_, ref) => {
 
             {/* iii. 原因状语从句 */}
             <SubSection num="iii" title="原因状语从句" en="Causal" color="#e67e22">
-              <p className="text-xs text-gray-500 mb-1">He likes spring...</p>
+              <p className="text-sm text-gray-500 mb-1">He likes spring...</p>
               <div className="space-y-0.5 font-mono text-sm">
                 <p><span className="bg-[#e67e22]/20 text-[#e67e22] px-1 rounded">for</span> its beauty. <span className="text-gray-400">(介词)</span></p>
                 <p><span className="bg-[#e67e22]/20 text-[#e67e22] px-1 rounded">for</span> it is beautiful. <span className="text-gray-400">(从句)</span></p>
