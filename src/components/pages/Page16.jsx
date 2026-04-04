@@ -76,24 +76,26 @@ function Section({ num, title, en, subtitle, children }) {
 
 function Timeline({ past, present, future }) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-3">
-      {/* Timeline arrow */}
-      <div className="flex items-center justify-center mb-3">
-        <span className="text-sm text-gray-500">过去</span>
-        <div className="flex-1 mx-2 relative h-6">
-          {/* Arrow line */}
-          <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 -translate-y-1/2" />
-          {/* Arrow head */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
-          {/* Center mark (现在) */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#2d5aa0] rounded-full" />
-          <span className="absolute left-1/2 -translate-x-1/2 -top-1 text-xs text-[#2d5aa0]">现在</span>
-        </div>
-        <span className="text-sm text-gray-500">未来</span>
+    <div className="bg-white border border-gray-200 rounded-lg p-4">
+      {/* Timeline diagram */}
+      <div className="relative h-12 mb-4">
+        {/* Main timeline */}
+        <div className="absolute top-6 left-4 right-4 h-0.5 bg-gray-300" />
+        {/* Arrow heads */}
+        <div className="absolute left-4 top-6 -translate-y-1/2 border-t-4 border-b-4 border-r-6 border-transparent border-r-gray-300" />
+        <div className="absolute right-4 top-6 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
+
+        {/* Labels */}
+        <span className="absolute left-8 top-0 text-sm text-gray-500">过去</span>
+        <span className="absolute left-1/2 -translate-x-1/2 top-0 text-sm text-[#2d5aa0] font-bold">现在</span>
+        <span className="absolute right-8 top-0 text-sm text-gray-500">未来</span>
+
+        {/* Center mark */}
+        <div className="absolute left-1/2 top-6 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#2d5aa0] rounded-full" />
       </div>
 
       {/* Tense forms */}
-      <div className="grid grid-cols-3 gap-2 text-center">
+      <div className="grid grid-cols-3 gap-3 text-center">
         <div className="bg-gray-50 rounded p-2">
           <p className="font-mono text-sm text-[#c0392b] font-bold">{past.verb}</p>
           <p className="text-xs text-gray-500 mt-1">{past.cn}</p>
