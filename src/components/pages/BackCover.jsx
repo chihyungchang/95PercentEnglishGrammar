@@ -9,7 +9,8 @@ const BackCover = forwardRef((props, ref) => {
     >
       <div className="flex flex-col items-center justify-center h-full text-center p-8">
         <div className="w-16 h-0.5 bg-white/50 mb-6" />
-        <p className="text-sm opacity-70 mb-5">更多内容，敬请期待...</p>
+        <p className="text-lg font-serif font-bold mb-2">The End</p>
+        <p className="text-sm opacity-70 mb-5">感谢阅读</p>
         <div className="w-16 h-0.5 bg-white/50" />
       </div>
     </div>
