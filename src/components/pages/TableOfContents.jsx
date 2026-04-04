@@ -9,6 +9,7 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
     { page: 6, num: '', title: '├ 从句的降级原理', desc: '主语从句、宾语从句' },
     { page: 7, num: '', title: '└ 表语从句与同位语从句', desc: '同位语概念详解' },
     { page: 8, num: '五', title: '定语从句', desc: '定语概念、类型、位置' },
+    { page: 9, num: '', title: '└ 定语从句详解', desc: '不定式短语、定语从句、综合例句' },
   ]
 
   return (
