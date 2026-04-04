@@ -11,6 +11,7 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
     { page: 8, num: '五', title: '定语从句', desc: '定语概念、类型、位置' },
     { page: 9, num: '', title: '└ 定语从句详解', desc: '不定式短语、定语从句、综合例句' },
     { page: 10, num: '六', title: '状语从句', desc: '状语概念、八种分类' },
+    { page: 11, num: '', title: '└ 状语从句详解', desc: '副词位置、原因状语从句' },
   ]
 
   return (
