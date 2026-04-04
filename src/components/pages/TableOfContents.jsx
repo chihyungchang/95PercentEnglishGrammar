@@ -11,7 +11,12 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
     { page: 8, num: '五', title: '定语从句', desc: '定语概念、类型、位置' },
     { page: 9, num: '', title: '└ 定语从句详解', desc: '不定式短语、定语从句、综合例句' },
     { page: 10, num: '六', title: '状语从句', desc: '状语概念、八种分类' },
-    { page: 11, num: '', title: '└ 状语从句详解', desc: '副词位置、原因状语从句' },
+    { page: 11, num: '', title: '├ 状语从句详解', desc: '副词位置、原因状语从句' },
+    { page: 12, num: '', title: '├ 更多状语从句', desc: '条件、目的、结果、让步' },
+    { page: 13, num: '', title: '└ 方式状语从句', desc: '方式、时间/地点从句例句' },
+    { page: 14, num: '七', title: '三个特殊句式', desc: '强调句' },
+    { page: 15, num: '', title: '├ 倒装句', desc: '句序倒置、强调语气' },
+    { page: 16, num: '', title: '└ 虚拟语气', desc: '假设不可能发生的事' },
   ]
 
   return (

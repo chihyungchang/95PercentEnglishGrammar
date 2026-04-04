@@ -12,12 +12,17 @@ import Page7 from './components/pages/Page7'
 import Page8 from './components/pages/Page8'
 import Page9 from './components/pages/Page9'
 import Page10 from './components/pages/Page10'
+import Page11 from './components/pages/Page11'
+import Page12 from './components/pages/Page12'
+import Page13 from './components/pages/Page13'
+import Page14 from './components/pages/Page14'
+import Page15 from './components/pages/Page15'
 import BackCover from './components/pages/BackCover'
 
 function App() {
   const bookRef = useRef()
   const [pageInfo, setPageInfo] = useState('封面')
-  const totalPages = 13
+  const totalPages = 18
 
   const onFlip = useCallback((e) => {
     const page = e.data
@@ -108,7 +113,14 @@ function App() {
         {/* 第6张纸：第9页(正面) + 第10页(背面) */}
         <Page9 />
         <Page10 />
-        {/* 第7张纸：封底 */}
+        {/* 第7张纸：第11页(正面) + 第12页(背面) */}
+        <Page11 />
+        <Page12 />
+        {/* 第8张纸：第13页(正面) + 第14页(背面) */}
+        <Page13 />
+        <Page14 />
+        {/* 第9张纸：第15页(正面) + 封底(背面) */}
+        <Page15 />
         <BackCover />
       </HTMLFlipBook>
 
