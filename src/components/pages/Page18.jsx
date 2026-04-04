@@ -28,34 +28,28 @@ const Page18 = forwardRef((_, ref) => {
         <Section num={4} title="完成进行时态" en="Perfect Continuous" subtitle="持续性；一直在做">
           {/* Timeline diagram */}
           <div className="bg-white border border-gray-200 rounded-lg p-4 mb-3">
-            {/* Timeline with duration lines */}
-            <div className="relative h-20 mb-2">
+            <div className="relative h-16 mb-4">
               {/* Main timeline */}
-              <div className="absolute top-10 left-4 right-4 h-0.5 bg-gray-300" />
+              <div className="absolute top-8 left-4 right-4 h-0.5 bg-gray-300" />
               {/* Arrow heads */}
-              <div className="absolute left-4 top-10 -translate-y-1/2 border-t-4 border-b-4 border-r-6 border-transparent border-r-gray-300" />
-              <div className="absolute right-4 top-10 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
+              <div className="absolute left-4 top-8 -translate-y-1/2 border-t-4 border-b-4 border-r-6 border-transparent border-r-gray-300" />
+              <div className="absolute right-4 top-8 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
 
               {/* Labels */}
-              <span className="absolute left-8 top-2 text-sm text-gray-500">过去</span>
-              <span className="absolute left-1/2 -translate-x-1/2 top-1 text-sm text-[#2d5aa0] font-bold">现在</span>
-              <span className="absolute right-8 top-2 text-sm text-gray-500">未来</span>
+              <span className="absolute left-8 top-1 text-sm text-gray-500">过去</span>
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-sm text-[#2d5aa0] font-bold">现在</span>
+              <span className="absolute right-8 top-1 text-sm text-gray-500">未来</span>
 
               {/* Center mark */}
-              <div className="absolute left-1/2 top-10 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#2d5aa0] rounded-full" />
+              <div className="absolute left-1/2 top-8 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#2d5aa0] rounded-full" />
 
               {/* Yesterday marker */}
-              <div className="absolute left-1/4 top-10 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#c0392b] rounded-full" />
-              <span className="absolute left-1/4 -translate-x-1/2 top-14 text-xs text-[#c0392b]">yesterday</span>
+              <div className="absolute left-1/4 top-8 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#8e44ad] rounded-full" />
+              <span className="absolute left-1/4 -translate-x-1/2 top-11 text-xs text-[#8e44ad]">yesterday</span>
 
               {/* Tomorrow marker */}
-              <div className="absolute left-3/4 top-10 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#1e8449] rounded-full" />
-              <span className="absolute left-3/4 -translate-x-1/2 top-14 text-xs text-[#1e8449]">tomorrow</span>
-
-              {/* Duration lines showing continuous action */}
-              <div className="absolute left-[15%] top-6 right-[52%] h-1 bg-[#8e44ad]/40 rounded" />
-              <div className="absolute left-[25%] top-7 right-[52%] h-1 bg-[#2d5aa0]/40 rounded" />
-              <div className="absolute left-[48%] top-6 right-[28%] h-1 bg-[#1e8449]/40 rounded" />
+              <div className="absolute left-3/4 top-8 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#1e8449] rounded-full" />
+              <span className="absolute left-3/4 -translate-x-1/2 top-11 text-xs text-[#1e8449]">tomorrow</span>
             </div>
           </div>
 

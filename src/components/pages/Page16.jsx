@@ -80,10 +80,10 @@ function Timeline({ past, present, future }) {
       {/* Timeline diagram */}
       <div className="relative h-12 mb-4">
         {/* Main timeline */}
-        <div className="absolute top-6 left-4 right-4 h-0.5 bg-gray-300" />
+        <div className="absolute top-8 left-4 right-4 h-0.5 bg-gray-300" />
         {/* Arrow heads */}
-        <div className="absolute left-4 top-6 -translate-y-1/2 border-t-4 border-b-4 border-r-6 border-transparent border-r-gray-300" />
-        <div className="absolute right-4 top-6 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
+        <div className="absolute left-4 top-8 -translate-y-1/2 border-t-4 border-b-4 border-r-6 border-transparent border-r-gray-300" />
+        <div className="absolute right-4 top-8 -translate-y-1/2 border-t-4 border-b-4 border-l-6 border-transparent border-l-gray-300" />
 
         {/* Labels */}
         <span className="absolute left-8 top-0 text-sm text-gray-500">过去</span>
@@ -91,7 +91,7 @@ function Timeline({ past, present, future }) {
         <span className="absolute right-8 top-0 text-sm text-gray-500">未来</span>
 
         {/* Center mark */}
-        <div className="absolute left-1/2 top-6 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#2d5aa0] rounded-full" />
+        <div className="absolute left-1/2 top-8 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#2d5aa0] rounded-full" />
       </div>
 
       {/* Tense forms */}
