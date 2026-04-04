@@ -50,9 +50,6 @@ function App() {
     bookRef.current?.pageFlip()?.flipNext()
   }
 
-  const goToPage = useCallback((pageNum) => {
-    bookRef.current?.pageFlip()?.flip(pageNum)
-  }, [])
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -102,7 +99,7 @@ function App() {
       >
         {/* 第1张纸：封面(正面) + 目录(背面) */}
         <CoverPage />
-        <TableOfContents onPageClick={goToPage} />
+        <TableOfContents />
         {/* 第2张纸：第1页(正面) + 第2页(背面) */}
         <Page1 />
         <Page2 />
