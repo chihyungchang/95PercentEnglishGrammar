@@ -17,11 +17,11 @@ const Page9 = forwardRef((_, ref) => {
       <div className="p-6 pl-14 h-full overflow-y-auto">
         {/* Title */}
         <div className="text-center mb-4 pb-2 border-b-2 border-[#1a1a2e]">
-          <span className="inline-block bg-[#1a1a2e] text-[#fdfcf8] px-3 py-1 rounded text-xs tracking-widest mb-1.5">
+          <span className="inline-block bg-[#1a1a2e] text-[#fdfcf8] px-3 py-1 rounded text-sm tracking-widest mb-1.5">
             六
           </span>
           <h2 className="font-serif text-xl font-black">状语从句</h2>
-          <p className="text-sm text-gray-500 mt-1">Adverbial Clause</p>
+          <p className="text-base text-gray-500 mt-1">Adverbial Clause</p>
         </div>
 
         {/* 什么是状语 */}
@@ -30,16 +30,16 @@ const Page9 = forwardRef((_, ref) => {
             {/* 副词 */}
             <div className="bg-white border border-gray-200 rounded-lg p-3">
               <div className="flex items-start gap-2">
-                <span className="bg-[#8e44ad] text-white text-[10px] px-1.5 py-0.5 rounded">①</span>
+                <span className="bg-[#8e44ad] text-white text-xs px-1.5 py-0.5 rounded">①</span>
                 <div className="flex-1">
-                  <p className="text-sm font-bold text-[#8e44ad]">副词</p>
+                  <p className="text-base font-bold text-[#8e44ad]">副词</p>
                   <div className="mt-2 space-y-1.5">
-                    <p className="text-xs text-gray-600">
+                    <p className="text-sm text-gray-600">
                       <span className="text-gray-400">修饰动词：</span>
                       walk <span className="text-[#8e44ad] font-medium underline">slowly</span>
                       <span className="text-gray-400 ml-2">慢慢地走</span>
                     </p>
-                    <p className="text-xs text-gray-600">
+                    <p className="text-sm text-gray-600">
                       <span className="text-gray-400">修饰形容词：</span>
                       <span className="text-[#8e44ad] font-medium underline">slightly</span> higher
                       <span className="text-gray-400 ml-2">稍微高一点</span>
@@ -52,9 +52,9 @@ const Page9 = forwardRef((_, ref) => {
             {/* 状语从句 */}
             <div className="bg-[#f5eef8] border border-[#8e44ad]/30 rounded-lg p-3">
               <div className="flex items-start gap-2">
-                <span className="bg-[#8e44ad] text-white text-[10px] px-1.5 py-0.5 rounded">②</span>
+                <span className="bg-[#8e44ad] text-white text-xs px-1.5 py-0.5 rounded">②</span>
                 <div className="flex-1">
-                  <p className="text-sm">
+                  <p className="text-base">
                     起<span className="font-bold text-[#8e44ad]">副词作用</span>的句子 →
                     <span className="font-bold text-[#8e44ad] ml-1">状语从句</span>
                   </p>
@@ -66,7 +66,7 @@ const Page9 = forwardRef((_, ref) => {
 
         {/* 按作用分类 */}
         <Section num={2} title="状语从句分类" en="Types by Function">
-          <div className="grid grid-cols-1 gap-1.5 text-xs">
+          <div className="grid grid-cols-1 gap-1.5 text-sm">
             <TypeRow
               letter="A"
               type="时间状语"
@@ -130,14 +130,14 @@ const Page9 = forwardRef((_, ref) => {
         <div className="mt-3 bg-[#fef9e7] border border-[#d4a017] rounded-lg p-3">
           <div className="flex items-start gap-2">
             <span className="text-[#d4a017]">💡</span>
-            <p className="text-xs text-gray-600">
+            <p className="text-sm text-gray-600">
               <span className="font-bold text-[#d4a017]">记忆技巧：</span>
               状语回答 "何时、何地、为何、如何" 等问题，修饰动词、形容词或整个句子
             </p>
           </div>
         </div>
 
-        <div className="absolute bottom-4 right-6 font-mono text-xs text-gray-400">9</div>
+        <div className="absolute bottom-4 right-6 font-mono text-sm text-gray-400">9</div>
       </div>
     </div>
   )
@@ -147,11 +147,11 @@ function Section({ num, title, en, children }) {
   return (
     <div className="mb-4">
       <div className="flex items-center gap-2 mb-2">
-        <span className="w-6 h-6 bg-[#2d5aa0] text-white text-xs font-mono font-semibold rounded-full flex items-center justify-center">
+        <span className="w-6 h-6 bg-[#2d5aa0] text-white text-sm font-mono font-semibold rounded-full flex items-center justify-center">
           {num}
         </span>
-        <span className="font-serif text-base font-bold">{title}</span>
-        <span className="text-xs text-gray-400">{en}</span>
+        <span className="font-serif text-lg font-bold">{title}</span>
+        <span className="text-sm text-gray-400">{en}</span>
       </div>
       {children}
     </div>
@@ -162,14 +162,14 @@ function TypeRow({ letter, type, question, examples, color }) {
   return (
     <div className="flex items-center gap-2 bg-white border border-gray-200 rounded px-2 py-1.5">
       <span
-        className="w-5 h-5 text-white text-[10px] font-bold rounded flex items-center justify-center shrink-0"
+        className="w-5 h-5 text-white text-xs font-bold rounded flex items-center justify-center shrink-0"
         style={{ backgroundColor: color }}
       >
         {letter}
       </span>
       <span className="font-bold w-16 shrink-0" style={{ color }}>{type}</span>
       <span className="text-gray-500 w-20 shrink-0">{question}</span>
-      <span className="text-gray-400 font-mono text-[10px] truncate">{examples}</span>
+      <span className="text-gray-400 font-mono text-xs truncate">{examples}</span>
     </div>
   )
 }

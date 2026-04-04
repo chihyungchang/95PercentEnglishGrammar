@@ -17,11 +17,11 @@ const Page4 = forwardRef((_, ref) => {
       <div className="p-6 pl-14 h-full overflow-y-auto">
         {/* Title */}
         <div className="text-center mb-5 pb-3 border-b-2 border-[#1a1a2e]">
-          <span className="inline-block bg-[#1a1a2e] text-[#fdfcf8] px-3 py-1 rounded text-xs tracking-widest mb-1.5">
+          <span className="inline-block bg-[#1a1a2e] text-[#fdfcf8] px-3 py-1 rounded text-sm tracking-widest mb-1.5">
             四
           </span>
           <h2 className="font-serif text-xl font-black">从句详解</h2>
-          <p className="text-sm text-gray-500 mt-1">引导词 + 主谓宾（或其五个兄弟）</p>
+          <p className="text-base text-gray-500 mt-1">引导词 + 主谓宾（或其五个兄弟）</p>
         </div>
 
         {/* 名词性从句 */}
@@ -34,7 +34,7 @@ const Page4 = forwardRef((_, ref) => {
               <ClauseType num={4} name="同位语从句" desc="从句作同位语" />
             </div>
             <div className="mt-3 pt-3 border-t border-dashed border-gray-200">
-              <p className="text-xs text-center text-gray-500">
+              <p className="text-sm text-center text-gray-500">
                 <span className="bg-[#fef9e7] px-2 py-1 rounded text-[#d4a017]">
                   一模一样的句子，只不过位置不同，所以名称不同
                 </span>
@@ -45,30 +45,30 @@ const Page4 = forwardRef((_, ref) => {
 
         {/* 名词性从句的位置 */}
         <div className="mt-5">
-          <h3 className="font-serif text-base font-bold mb-3">名词性从句的位置</h3>
+          <h3 className="font-serif text-lg font-bold mb-3">名词性从句的位置</h3>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             {/* Header */}
             <div className="grid grid-cols-3 bg-gray-100 border-b border-gray-200">
               <div className="p-3 text-center border-r border-gray-200">
                 <span className="text-[#c0392b] font-bold">主</span>
-                <p className="text-[10px] text-gray-500 mt-0.5">名词</p>
+                <p className="text-xs text-gray-500 mt-0.5">名词</p>
               </div>
               <div className="p-3 text-center border-r border-gray-200">
                 <span className="text-[#1e8449] font-bold">谓</span>
-                <p className="text-[10px] text-gray-500 mt-0.5">及物动词</p>
+                <p className="text-xs text-gray-500 mt-0.5">及物动词</p>
               </div>
               <div className="p-3 text-center">
                 <span className="text-[#2d5aa0] font-bold">宾</span>
-                <p className="text-[10px] text-gray-500 mt-0.5">名词</p>
+                <p className="text-xs text-gray-500 mt-0.5">名词</p>
               </div>
             </div>
             {/* Body */}
             <div className="grid grid-cols-3">
               <div className="p-3 border-r border-gray-200">
                 <div className="bg-[#fdeaea] border border-[#c0392b] rounded p-2 text-center">
-                  <p className="text-xs font-semibold text-[#c0392b]">名词性从句</p>
-                  <p className="text-[10px] text-gray-500 mt-1">↓</p>
-                  <p className="text-xs font-bold text-[#c0392b]">主语从句</p>
+                  <p className="text-sm font-semibold text-[#c0392b]">名词性从句</p>
+                  <p className="text-xs text-gray-500 mt-1">↓</p>
+                  <p className="text-sm font-bold text-[#c0392b]">主语从句</p>
                 </div>
               </div>
               <div className="p-3 border-r border-gray-200 flex items-center justify-center">
@@ -76,9 +76,9 @@ const Page4 = forwardRef((_, ref) => {
               </div>
               <div className="p-3">
                 <div className="bg-[#e8f0fe] border border-[#2d5aa0] rounded p-2 text-center">
-                  <p className="text-xs font-semibold text-[#2d5aa0]">名词性从句</p>
-                  <p className="text-[10px] text-gray-500 mt-1">↓</p>
-                  <p className="text-xs font-bold text-[#2d5aa0]">宾语从句</p>
+                  <p className="text-sm font-semibold text-[#2d5aa0]">名词性从句</p>
+                  <p className="text-xs text-gray-500 mt-1">↓</p>
+                  <p className="text-sm font-bold text-[#2d5aa0]">宾语从句</p>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Page4 = forwardRef((_, ref) => {
 
         {/* 例句 */}
         <div className="mt-5">
-          <h3 className="font-serif text-base font-bold mb-3">从句例句</h3>
+          <h3 className="font-serif text-lg font-bold mb-3">从句例句</h3>
           <div className="space-y-2">
             <ExampleSentence
               label="主语从句"
@@ -110,7 +110,7 @@ const Page4 = forwardRef((_, ref) => {
           </div>
         </div>
 
-        <div className="absolute bottom-4 right-6 font-mono text-xs text-gray-400">4</div>
+        <div className="absolute bottom-4 right-6 font-mono text-sm text-gray-400">4</div>
       </div>
     </div>
   )
@@ -121,11 +121,11 @@ function Section({ num, title, en, children }) {
   return (
     <div className="mb-5">
       <div className="flex items-center gap-2 mb-2">
-        <span className="w-6 h-6 bg-[#2d5aa0] text-white text-xs font-mono font-semibold rounded-full flex items-center justify-center">
+        <span className="w-6 h-6 bg-[#2d5aa0] text-white text-sm font-mono font-semibold rounded-full flex items-center justify-center">
           {num}
         </span>
-        <span className="font-serif text-base font-bold">{title}</span>
-        <span className="text-xs text-gray-400">{en}</span>
+        <span className="font-serif text-lg font-bold">{title}</span>
+        <span className="text-sm text-gray-400">{en}</span>
       </div>
       {children}
     </div>
@@ -135,12 +135,12 @@ function Section({ num, title, en, children }) {
 function ClauseType({ num, name, desc }) {
   return (
     <div className="flex items-center gap-2 bg-white border border-gray-200 rounded p-2">
-      <span className="w-5 h-5 bg-[#1e8449] text-white text-[10px] font-mono rounded-full flex items-center justify-center flex-shrink-0">
+      <span className="w-5 h-5 bg-[#1e8449] text-white text-xs font-mono rounded-full flex items-center justify-center flex-shrink-0">
         {num}
       </span>
       <div>
-        <p className="text-sm font-semibold">{name}</p>
-        <p className="text-[10px] text-gray-400">{desc}</p>
+        <p className="text-base font-semibold">{name}</p>
+        <p className="text-xs text-gray-400">{desc}</p>
       </div>
     </div>
   )
@@ -150,14 +150,14 @@ function ExampleSentence({ label, color, en, zh }) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-3 flex items-start gap-3">
       <span
-        className="text-[10px] font-semibold px-2 py-0.5 rounded flex-shrink-0"
+        className="text-xs font-semibold px-2 py-0.5 rounded flex-shrink-0"
         style={{ backgroundColor: color + '20', color: color }}
       >
         {label}
       </span>
       <div>
-        <p className="font-mono text-sm">{en}</p>
-        <p className="text-xs text-gray-500 mt-0.5">{zh}</p>
+        <p className="font-mono text-base">{en}</p>
+        <p className="text-sm text-gray-500 mt-0.5">{zh}</p>
       </div>
     </div>
   )

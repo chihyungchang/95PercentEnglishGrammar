@@ -41,7 +41,7 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
         {/* Title */}
         <div className="text-center mb-6 pb-3 border-b-2 border-[#1a1a2e]">
           <h2 className="font-serif text-2xl font-black text-[#1a1a2e]">目 录</h2>
-          <p className="text-sm text-gray-500 mt-1">Table of Contents</p>
+          <p className="text-base text-gray-500 mt-1">Table of Contents</p>
         </div>
 
         {/* Chapter list */}
@@ -54,7 +54,7 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
             >
               <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-gray-200 hover:border-[#2d5aa0] hover:bg-[#e8f0fe]/30 transition-all cursor-pointer">
                 {chapter.num ? (
-                  <span className="w-8 h-8 bg-[#2d5aa0] text-white text-sm font-serif font-bold rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="w-8 h-8 bg-[#2d5aa0] text-white text-base font-serif font-bold rounded-full flex items-center justify-center flex-shrink-0">
                     {chapter.num}
                   </span>
                 ) : (
@@ -66,10 +66,10 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
                   <p className="font-serif font-bold text-[#1a1a2e] group-hover:text-[#2d5aa0] transition-colors">
                     {chapter.title}
                   </p>
-                  <p className="text-xs text-gray-500 truncate">{chapter.desc}</p>
+                  <p className="text-sm text-gray-500 truncate">{chapter.desc}</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs text-gray-400 font-mono">P.{chapter.page - 1}</span>
+                  <span className="text-sm text-gray-400 font-mono">P.{chapter.page - 1}</span>
                   <svg className="w-4 h-4 text-gray-300 group-hover:text-[#2d5aa0] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M9 18l6-6-6-6"/>
                   </svg>
@@ -81,12 +81,12 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
 
         {/* Tip */}
         <div className="mt-6 text-center">
-          <p className="text-xs text-gray-400">
+          <p className="text-sm text-gray-400">
             点击章节标题可直接跳转
           </p>
         </div>
 
-        <div className="absolute bottom-4 right-6 font-mono text-xs text-gray-400">目录</div>
+        <div className="absolute bottom-4 right-6 font-mono text-sm text-gray-400">目录</div>
       </div>
     </div>
   )

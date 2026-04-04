@@ -85,7 +85,7 @@ function App() {
       <HTMLFlipBook
         ref={bookRef}
         width={700}
-        height={950}
+        height={1000}
         size="fixed"
         minWidth={650}
         maxWidth={700}
