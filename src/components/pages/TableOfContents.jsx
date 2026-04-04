@@ -1,6 +1,8 @@
 import { forwardRef } from 'react'
 
 const TableOfContents = forwardRef(({ onPageClick }, ref) => {
+  // page 值 = flipbook index = 页面在HTMLFlipBook中的位置
+  // index 0=封面, 1=目录, 2=Page1, 3=Page2, ...
   const chapters = [
     { page: 2, num: '一', title: '英文句子结构分类', desc: '简单句、并列句、复合句' },
     { page: 3, num: '二', title: '简单句的基本句型', desc: '主谓宾、主谓、主系表' },
