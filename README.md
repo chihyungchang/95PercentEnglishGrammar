@@ -2,6 +2,7 @@
 
 # 📖 95% 英语语法笔记
 
+[![GitHub](https://img.shields.io/badge/GitHub-chihyungchang-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/chihyungchang/95PercentEnglishGrammar)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -9,7 +10,7 @@
 
 **一本可以翻页的交互式英语语法电子书，涵盖 95% 常用英语语法知识**
 
-[在线预览](#) · [报告问题](../../issues) · [功能建议](../../issues)
+[📂 GitHub](https://github.com/chihyungchang/95PercentEnglishGrammar) · [🐛 报告问题](https://github.com/chihyungchang/95PercentEnglishGrammar/issues) · [💡 功能建议](https://github.com/chihyungchang/95PercentEnglishGrammar/issues)
 
 </div>
 
