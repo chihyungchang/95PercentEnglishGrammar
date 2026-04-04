@@ -48,10 +48,7 @@ const Page16 = forwardRef((_, ref) => {
           </div>
         </Section>
 
-        {/* 3) 完成时态 预告 */}
-        <Section num={3} title="完成时态" en="Perfect Tense" subtitle="有结果">
-          <p className="text-xs text-gray-500 text-center py-2">→ 见下页</p>
-        </Section>
+       
 
         <div className="absolute bottom-4 right-6 font-mono text-xs text-gray-400">16</div>
       </div>

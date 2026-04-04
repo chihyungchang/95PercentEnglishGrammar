@@ -20,6 +20,8 @@ const TableOfContents = forwardRef(({ onPageClick }, ref) => {
     { page: 17, num: '八', title: '时态', desc: '一般、进行时态' },
     { page: 18, num: '', title: '├ 完成时态', desc: '过去/现在/将来完成' },
     { page: 19, num: '', title: '└ 完成进行时态', desc: '持续性动作' },
+    { page: 20, num: '九', title: '语态', desc: '主动语态、被动语态' },
+    { page: 21, num: '十', title: '非谓语', desc: '现在分词、过去分词' },
   ]
 
   return (
