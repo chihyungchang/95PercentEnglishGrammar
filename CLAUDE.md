@@ -34,6 +34,7 @@ src/
 │       ├── Page6.jsx     # 从句（续）：表语从句、同位语从句详解
 │       ├── Page7.jsx     # 定语从句（定语概念、类型、位置、例句）
 │       ├── Page8.jsx     # 定语从句详解（不定式短语、定语从句、终极综合版）
+│       ├── Page9.jsx     # 状语从句（状语概念、八种分类）
 │       └── BackCover.jsx # 封底
 └── styles/
     └── index.css         # Tailwind entry + global styles
@@ -75,4 +76,4 @@ Defined in `tailwind.config.js`:
 Current HTMLFlipBook settings (App.jsx):
 - Size: 700 x 950 pixels
 - Double-page view (usePortrait={false})
-- 11 pages total (Cover, TOC, Page1-8, BackCover)
+- 12 pages total (Cover, TOC, Page1-9, BackCover)
