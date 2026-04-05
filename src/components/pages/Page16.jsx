@@ -31,20 +31,78 @@ const Page16 = forwardRef((_, ref) => {
             present={{ verb: 'do / does', cn: '通常做' }}
             future={{ verb: 'will do / be going to do', cn: '将要做' }}
           />
+          <div className="space-y-3 mt-3">
+            {/* 一般过去 */}
+            <TenseCard
+              color="#c0392b"
+              title="一般过去"
+              en="Simple Past"
+              verb="did"
+              example="I went to school yesterday."
+              translation="我昨天去了学校。"
+              highlightPattern="went"
+            />
+
+            {/* 一般现在 */}
+            <TenseCard
+              color="#2d5aa0"
+              title="一般现在"
+              en="Simple Present"
+              verb="do / does"
+              example="I eat breakfast every day."
+              translation="我每天吃早餐。"
+              highlightPattern="eat"
+            />
+
+            {/* 一般将来 */}
+            <TenseCard
+              color="#1e8449"
+              title="一般将来"
+              en="Simple Future"
+              verb="will do"
+              example="I will go to Beijing tomorrow."
+              translation="我明天会去北京。"
+              highlightPattern="will go"
+            />
+          </div>
         </Section>
 
         {/* 2) 进行时态 */}
         <Section num={2} title="进行时态" en="Continuous Tense" subtitle="正在发生">
-          <Timeline
-            past={{ verb: 'was/were doing', cn: '当时正在做' }}
-            present={{ verb: 'am/is/are doing', cn: '现在正在做' }}
-            future={{ verb: 'will be doing', cn: '将会正在做' }}
-          />
-          <div className="bg-[#e8f0fe] border border-[#2d5aa0]/30 rounded-lg p-2 mt-2">
-            <p className="font-mono text-base">
-              I <span className="bg-[#2d5aa0] text-white px-1 rounded text-xs">will be sleeping</span> by the time you come back.
-            </p>
-            <p className="text-sm text-gray-500 mt-1">你回来的时候我会在睡觉。</p>
+          {/* Three continuous tenses */}
+          <div className="space-y-3">
+            {/* 过去进行 */}
+            <TenseCard
+              color="#c0392b"
+              title="过去进行"
+              en="Past Continuous"
+              verb="was/were + doing"
+              example="I was reading a book when you called."
+              translation="你打电话时我正在看书。"
+              highlightPattern="was reading"
+            />
+
+            {/* 现在进行 */}
+            <TenseCard
+              color="#2d5aa0"
+              title="现在进行"
+              en="Present Continuous"
+              verb="am/is/are + doing"
+              example="She is working on the project now."
+              translation="她现在正在做这个项目。"
+              highlightPattern="is working"
+            />
+
+            {/* 将来进行 */}
+            <TenseCard
+              color="#1e8449"
+              title="将来进行"
+              en="Future Continuous"
+              verb="will be + doing"
+              example="I will be sleeping by the time you come back."
+              translation="你回来的时候我会在睡觉。"
+              highlightPattern="will be sleeping"
+            />
           </div>
         </Section>
 
@@ -109,6 +167,37 @@ function Timeline({ past, present, future }) {
           <p className="text-xs text-gray-500 mt-1">{future.cn}</p>
         </div>
       </div>
+    </div>
+  )
+}
+
+function TenseCard({ color, title, en, verb, example, translation, highlightPattern }) {
+  // Parse example to highlight the verb phrase
+  const regex = new RegExp(`(${highlightPattern})`, 'i')
+  const parts = example.split(regex)
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg p-3">
+      <div className="flex items-center gap-2 mb-2">
+        <span
+          className="px-2 py-0.5 rounded text-white text-sm font-bold"
+          style={{ backgroundColor: color }}
+        >
+          {title}
+        </span>
+        <span className="text-sm text-gray-400">{en}</span>
+        <span className="ml-auto font-mono text-base" style={{ color }}>{verb}</span>
+      </div>
+      <p className="font-mono text-base">
+        {parts.map((part, i) =>
+          regex.test(part) ? (
+            <span key={i} className="px-1 rounded text-white text-sm" style={{ backgroundColor: color }}>{part}</span>
+          ) : (
+            <span key={i}>{part}</span>
+          )
+        )}
+      </p>
+      <p className="text-sm text-gray-500 mt-1">{translation}</p>
     </div>
   )
 }
